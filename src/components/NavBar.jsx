@@ -1,17 +1,19 @@
 import { NavLink } from "react-router-dom";
 
+const isActiveMenu = ({ isActive }) => (isActive ? "active-menu-item" : "");
+
 const NavBar = () => {
   return (
     <nav>
       <ul>
         <li>
-          <NavLink to="/">Главная</NavLink>
+          <NavLink className={isActiveMenu} to="/">Главная</NavLink>
         </li>
         <li>
-          <NavLink to="/about">О нас</NavLink>
+          <NavLink className={isActiveMenu} to="/about">О нас</NavLink>
         </li>
         <li>
-          <NavLink to="/posts">Посты</NavLink>
+          <NavLink className={isActiveMenu} to="/articles">Посты</NavLink>
         </li>
       </ul>
     </nav>
