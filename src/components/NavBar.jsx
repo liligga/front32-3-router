@@ -7,13 +7,29 @@ const NavBar = () => {
     <nav>
       <ul>
         <li>
-          <NavLink className={isActiveMenu} to="/">Главная</NavLink>
+          <NavLink className={isActiveMenu} to="/">
+            Главная
+          </NavLink>
         </li>
         <li>
-          <NavLink className={isActiveMenu} to="/about">О нас</NavLink>
+          <NavLink className={isActiveMenu} to="/about">
+            О нас
+          </NavLink>
         </li>
         <li>
-          <NavLink className={isActiveMenu} to="/articles">Посты</NavLink>
+          <NavLink className={isActiveMenu} to="/articles">
+            Посты
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className={isActiveMenu} to="/login">
+            Логин
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className={isActiveMenu} to="/products">
+            Товары
+          </NavLink>
         </li>
       </ul>
     </nav>

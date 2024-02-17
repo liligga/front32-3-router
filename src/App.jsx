@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import PostsPage from "./pages/PostsPage";
 import LoginPage from "./pages/LoginPage";
 import SinglePostPage from "./pages/SinglePostPage";
+import ProductsPage from "./pages/ProductsPage";
 import Layout from "./components/Layout";
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="articles" element={<PostsPage />} />
           <Route path="articles/:postId" element={<SinglePostPage />} />
           <Route path="login" element={<LoginPage />} />
+          <Route path="products" element={<ProductsPage />} />
 
           <Route path="*" element={<div>Страница не найдена 404</div>} />
         </Route>

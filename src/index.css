@@ -54,9 +54,39 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 5px;
+}
+
 nav li a.active-menu-item {
   font-weight: bold;
   color: red;
+}
+
+.categories {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.categories button {
+  padding: 2px;
+  font-size: 12px;
+}
+
+.products {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.products li {
+  border: 1px solid #ccc;
+  padding: 3px;
 }
 
 @media (prefers-color-scheme: light) {
